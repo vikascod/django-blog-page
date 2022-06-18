@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<h1 class="text-center mt-3" style="font-family: sans-serif; color: red; background-color: gold;">This is home page of
+    Django Blog</h1>
+<div class="container my-3">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/900x400/?company,place" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/900x400/?coding,computer" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/900x400/?css,html" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div class="container my-4">
+    <h1 class="text-center">Choose One</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/160x160/?place" class="rounded" alt="Loading...">
+                <h2 class="my-3">Helps</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab at porro molestiae, iste
+                    incidunt modi quis error vitae, libero quia harum illum inventore facilis, nam voluptas quos numquam
+                    commodi?</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/160x160/?company" class="rounded" alt="Loading...">
+                <h2 class="my-3">Services</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus veniam excepturi vitae quae sint et
+                    inventore dolores. Reprehenderit quibusdam repudiandae expedita. Exercitationem animi fugiat enim
+                    nostrum deserunt reprehenderit assumenda dolores.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/160x160/?apple mac" class="rounded" alt="Loading...">
+                <h2 class="my-3">More Details</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad veritatis velit, similique
+                    quidem autem facere temporibus harum asperiores sit, eligendi repellendus nihil repudiandae. Ab
+                    officia illo voluptatem ut sapiente.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #212121;
+        color: white;
+    }
+</style>
+{% endblock body %}
